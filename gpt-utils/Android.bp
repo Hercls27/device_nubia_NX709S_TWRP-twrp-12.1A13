@@ -16,7 +16,7 @@
 
 
 cc_library {
-    name: "libgptutils.nubia_sm8475",
+    name: "libgptutils.NX709S",
     vendor: true,
     recovery_available: true,
     shared_libs: [
