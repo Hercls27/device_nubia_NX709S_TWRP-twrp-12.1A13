@@ -20,7 +20,7 @@ Camera  | 50 MP Leica lens (wide), 10 MP (telephoto), 12 MP (ultrawide), 32 MP (
 
 ## Device picture
 
-![Xiaomi 13](https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1670745532.86084186.png)
+![Xiaomi 13](https://bludiode.com/37862/nubia-red-magic-7s-pro-12gb-256gb-preto-transparente-supernova.jpg)
 
 ## Features
 
