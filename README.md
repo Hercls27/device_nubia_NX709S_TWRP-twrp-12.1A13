@@ -1,43 +1,39 @@
-# ### TWRP device tree for Xiaomi 13
+## Custom Recovery | Device Tree
+[RedMagic 7s Pro]
+| Device                  | RedMagic 7s Pro                                          |
+| ----------------------- | ---------------------------------------------------------|
+| SoC                     | Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)                      |      
+| CPU                     | 1x3.2 GHz Cortex•X2 +3x2.8 GHz Cortex•A710 + 4x2.0 GHz Cortex•A510  |
+| GPU                     | Adreno 730                                             |
+| Internal                | 256GB 12GB RAM, 512GB 16GB RAM, UFS 3.1                 |
+| Model                   | NX709S |
+| Codename                | NX709S |
 
-Xiaomi 13 (codenamed _"fuxi"_) is a high-end smartphone from Xiaomi.
+### Release Notes
+* Orangefox/TWRP now boots, decryption is working fine but aren't tested in GSI.
+* It was tested in a device running RMOS 6.0 (NX709S) firmware, but it should work in RMOS 5.5 too.
+* Do not flash OTA firmware yet, it is not well-tested, could brick your device.
+* Red Magic 7s Pro is Virtual A/B with dedicated Recovery Partition, no need to `boot` it like other A/Bs, just `flash` it.
 
-It was announced & released on December 2022.
+### Working Features
+* Internal Storage
+* FastbootD
+* ADB Commands and Terminal
+* Flashing .zip files.
+* Flashing Firmware
+* Flashing non-logical .img files.
+* ADB Sideload
+* MTP
 
-## Device specifications
+### Issues and Bugs
+* External Storage (OTG)
+* Flashing OTA. (need test)
+* Battery percentage (only show -1)
+* Vibration/Haptics
 
-Basic   | Spec Sheet
--------:|:-------------------------
-SoC     | Snapdragon® 8 Gen 2 (SM8550)
-CPU     | 1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510
-GPU     | Adreno 740
-Memory  | 8/12 GB RAM
-Shipped Android Version | 13.0 with MIUI 14
-Storage | 128/256/512 GB
-Battery | Li-Ion 4500 mAh, non-removable, graphene-enhanced
-Display | 1080 x 2400 pixels, 20:9 ratio (~414 ppi density), 6.36 inches, OLED, 120Hz, Dolby Vision, HDR10+, 1200 nits (HBM), 1900 nits (peak)
-Camera  | 50 MP Leica lens (wide), 10 MP (telephoto), 12 MP (ultrawide), 32 MP (front-wide)
-
-## Device picture
-
-![Xiaomi 13](https://bludiode.com/37862/nubia-red-magic-7s-pro-12gb-256gb-preto-transparente-supernova.jpg)
-
-## Features
-
-Works:
-
-- [X] ADB
-- [X] Decryption
-- [X] Display
-- [X] Fasbootd
-- [X] Flashing
-- [X] MTP
-- [X] Sideload
-- [X] USB OTG
-- [X] Vibrator
-
-## To use it:
-
+### Credits
 ```
-fastboot flash recovery_ab out/target/product/fuxi/recovery.img
+# Copyright (C) 2023 The Android Open Source Project
+# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+# SPDX-License-Identifier: Apache-2.0
 ```
